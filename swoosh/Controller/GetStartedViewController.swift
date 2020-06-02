@@ -18,7 +18,7 @@ class GetStartedViewController: UIViewController {
         
     }
 
-    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
+    @IBAction func unwindFromLeagueVC(unwindSegue: UIStoryboardSegue) {
         
     }
 
