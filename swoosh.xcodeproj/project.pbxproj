@@ -77,7 +77,6 @@
 		947166602481C6DD00BDF281 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				947166612481C74800BDF281 /* BorderButton.swift */,
 				947166522481C12800BDF281 /* Main.storyboard */,
 			);
 			path = Views;
@@ -86,6 +85,7 @@
 		947166632481CA9E00BDF281 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				947166612481C74800BDF281 /* BorderButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

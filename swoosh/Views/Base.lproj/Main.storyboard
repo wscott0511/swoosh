@@ -79,10 +79,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="F5f-vm-x44" id="Coc-3L-hcT"/>
-                        <outlet property="swoosh" destination="hHl-RR-e9D" id="vD7-15-3cb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,6 +144,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="OT9-7q-kgq" eventType="touchUpInside" id="2Md-Ir-Eew"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="SaQ-Tx-d9t">
                                 <rect key="frame" x="132" y="15" width="150" height="110.5"/>
@@ -173,6 +172,9 @@
                                     <constraint firstAttribute="width" constant="42" id="Ti4-B2-5MI"/>
                                 </constraints>
                                 <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="U4S-IE-Dr9" kind="unwind" unwindAction="unwindFromLeagueVCWithUnwindSegue:" id="iL8-gG-x59"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -195,8 +197,12 @@
                         <viewLayoutGuide key="safeArea" id="5Rx-Yg-iOA"/>
                     </view>
                     <navigationItem key="navigationItem" id="fcs-WQ-HbH"/>
+                    <connections>
+                        <segue destination="Bcj-Gg-Ut3" kind="show" identifier="skillVCSegue" id="Nch-M8-NGO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZj-7I-5Eh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="U4S-IE-Dr9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="117.85714285714285"/>
         </scene>
@@ -205,14 +211,14 @@
             <objects>
                 <viewController id="Bcj-Gg-Ut3" customClass="SkillVC" customModule="swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5IC-Tm-E2X">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="LEE-xY-4vB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="y1B-9P-uka">
-                                <rect key="frame" x="0.0" y="59" width="414" height="110.5"/>
+                                <rect key="frame" x="0.0" y="15" width="414" height="110.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cHB-yA-wi5">
                                         <rect key="frame" x="147.5" y="0.0" width="119" height="20"/>
@@ -229,7 +235,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="TxK-Dm-zdq">
-                                <rect key="frame" x="20" y="219.5" width="374" height="73"/>
+                                <rect key="frame" x="20" y="175.5" width="374" height="73"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHj-I5-XU4" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="174.5" height="73"/>
@@ -256,7 +262,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vH-CC-cJe" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
-                                <rect key="frame" x="20" y="765" width="374" height="73"/>
+                                <rect key="frame" x="20" y="711" width="374" height="73"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="DWJ-LV-OM9"/>
@@ -286,6 +292,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8gU-z7-7LK"/>
                     </view>
+                    <navigationItem key="navigationItem" id="OHb-R8-U51"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUL-21-7eA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
