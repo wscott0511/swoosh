@@ -1,5 +1,5 @@
 //
-//  Player.swift
+//  Skill.swift
 //  swoosh
 //
 //  Created by William Scott on 6/2/20.
@@ -7,9 +7,3 @@
 //
 
 import Foundation
-
-struct Player {
-    var desiredLeague: String!
-    var selectedSkillLevel: String!
-    
-}

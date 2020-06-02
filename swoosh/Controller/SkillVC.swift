@@ -9,14 +9,30 @@
 import UIKit
 
 class SkillVC: UIViewController {
+    
+    var player: Player!
 
+    @IBOutlet weak var beginnerButton: BorderButton!
+    @IBOutlet weak var ballerButton: BorderButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func beginnerButtonPressed(_ sender: Any) {
+        selectSkillLevel(skillLevel: "beginner")
+    }
+    
+    @IBAction func ballerButtonPressed(_ sender: Any) {
+        selectSkillLevel(skillLevel: "baller")
+    }
+    
+    func selectSkillLevel(skillLevel: String) {
+        player.selectedSkillLevel = skillLevel
+        
+    }
+   
     /*
     // MARK: - Navigation
 

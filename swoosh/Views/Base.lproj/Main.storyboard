@@ -257,6 +257,9 @@
                                         <state key="normal" title="Beginner">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="beginnerButtonPressed:" destination="Bcj-Gg-Ut3" eventType="touchUpInside" id="ZvV-WB-aAd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cD6-b9-a1J" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
                                         <rect key="frame" x="199.5" y="0.0" width="174.5" height="73"/>
@@ -268,6 +271,9 @@
                                         <state key="normal" title="Baller">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ballerButtonPressed:" destination="Bcj-Gg-Ut3" eventType="touchUpInside" id="vNB-nJ-cr9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -303,6 +309,10 @@
                         <viewLayoutGuide key="safeArea" id="8gU-z7-7LK"/>
                     </view>
                     <navigationItem key="navigationItem" id="OHb-R8-U51"/>
+                    <connections>
+                        <outlet property="ballerButton" destination="cD6-b9-a1J" id="dDg-FI-GhI"/>
+                        <outlet property="beginnerButton" destination="mHj-I5-XU4" id="6UZ-xm-Se9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUL-21-7eA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
