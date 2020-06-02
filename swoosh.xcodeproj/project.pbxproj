@@ -16,6 +16,7 @@
 		947166622481C74800BDF281 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947166612481C74800BDF281 /* BorderButton.swift */; };
 		94D22DC72486AF4C004E671C /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D22DC62486AF4C004E671C /* LeagueVC.swift */; };
 		94D22DC92486AF60004E671C /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D22DC82486AF60004E671C /* SkillVC.swift */; };
+		94D22DCB2486B71B004E671C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D22DCA2486B71B004E671C /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		947166612481C74800BDF281 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		94D22DC62486AF4C004E671C /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
 		94D22DC82486AF60004E671C /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
+		94D22DCA2486B71B004E671C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				947166522481C12800BDF281 /* Main.storyboard */,
+				947166612481C74800BDF281 /* BorderButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -85,7 +88,7 @@
 		947166632481CA9E00BDF281 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				947166612481C74800BDF281 /* BorderButton.swift */,
+				94D22DCA2486B71B004E671C /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				947166512481C12800BDF281 /* GetStartedViewController.swift in Sources */,
 				9471664D2481C12800BDF281 /* AppDelegate.swift in Sources */,
 				9471664F2481C12800BDF281 /* SceneDelegate.swift in Sources */,
+				94D22DCB2486B71B004E671C /* Player.swift in Sources */,
 				94D22DC92486AF60004E671C /* SkillVC.swift in Sources */,
 				947166622481C74800BDF281 /* BorderButton.swift in Sources */,
 			);
